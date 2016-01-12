@@ -1,0 +1,86 @@
+body {
+  color: #333;
+  font-size: 16px;
+}
+p {
+  margin: 0;
+}
+.row {
+  margin:0;
+}
+.header {
+  height: 75px;
+  background-color: #000;
+  font-weight: bold;
+}
+.footer {
+  height: 75px;
+  background-color: #000;
+}
+.nav > li > a {
+  color:#fff;
+}
+.nav > li > a:hover {
+  background-color: #000;
+  color:#78A300;
+}
+.main_theme {
+  height: 575px;
+  background-image: url('/images/apm_hero_poster.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: #000;
+}
+.sub-title {
+  font-weight: bold;
+}
+.list-unstyled > li {
+  line-height: 1.5em;
+  margin-bottom:20px;
+}
+.detail-link {
+  font-size: 14px;
+  font-style: italic;
+}
+.detail-arrow {
+  font-size: 12px;
+}
+.detail-title {
+  font-size:36px;
+  line-height:1.2em;
+}
+.detail-sub-title {
+  font-size:18px;
+  margin-top: 12px;
+}
+.doc-section {
+  position:relative;
+  background-image: url('/images/bg-insights-incl.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: #000;
+}
+.features-tbl {
+  width:550px;
+  border:5px solid #ddd;
+}
+.features-tbl th {
+  font-size: 20px;
+  padding: 20px;
+}
+.features-tbl tr {
+  border-bottom:1px solid #ddd;
+}
+.features-tbl td {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.features-tbl th:nth-child(1), .features-tbl td:nth-child(1) {
+  background-color:#eee;
+  border-right: 1px solid #ddd;
+}
+.features-tbl th:nth-child(2), .features-tbl td:nth-child(2) {
+  text-align: center;
+}
