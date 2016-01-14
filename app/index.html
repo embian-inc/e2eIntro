@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="e2eIntroApp">
+  <body id="body" ng-app="e2eIntroApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -37,8 +37,8 @@
         <div style="float:left; padding-left:60px">
           <ul class="nav navbar-nav">
             <li><a ng-href="#/feature">e2eMon의 특징</a></li>
-            <li><a ng-href="#/about">시스템 아키텍쳐</a></li>
-            <li><a ng-href="#/about">관련 문서</a></li>
+            <li><a ng-href="#/">시스템 아키텍쳐</a></li>
+            <li><a ng-href="#/document#body">관련 문서</a></li>
             <li><a ng-href="http://www.embian.com/" target="_blank">Embian 소개</a></li>
             <li><a ng-href="http://blog.embian.com/" target="_blank">Embian Blog</a></li>
           </ul>
@@ -88,7 +88,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/document.js"></script>
         <!-- endbuild -->
 </body>
 </html>

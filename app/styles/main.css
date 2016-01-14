@@ -29,6 +29,9 @@ p {
   background-color: #000;
   color:#78A300;
 }
+.nav > li > a:visited {
+  background-color: #000;
+}
 .main_theme {
   height: 575px;
   background-image: url('/images/apm_hero_poster.jpg');
@@ -90,8 +93,97 @@ p {
   text-align: center;
 }
 
+.hero-sub+.hairline+.section,
+.hero-sub+.section{
+  padding-top: 40px;
+}
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.section .hero-sub {
+  padding-top: 28px;
+  padding-bottom:  28px;
+}
+.intro{
+  margin-bottom: 26px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.555555556;
+}
+a:hover, a:focus {
+    color: #008c99;
+    text-decoration: none;
+}
 
-/* library css */
+a {
+    color: #0ab0bf;
+    font-weight: inherit;
+    text-decoration: none;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+#features nav ul.nav-side li {
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+#features nav ul.nav-side li a {
+    display: block;
+    padding-left: 12px;
+    color: #2c2c2c;
+    border-left: 5px solid #fff;
+}
+@media (min-width: 768px) {
+  .intro{
+    font-size: 18px;
+  }
+  hr.hairline {
+    width: 690px;
+  }
+  #features nav {
+    padding-bottom: 70px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  nav ul.nav-side {
+    width: 158px;
+}
+}
+@media (min-width: 992px) {
+  hr.hairline {
+    width: 910px;
+  }
+   nav ul.nav-side {
+    width: 213px;
+}
+}
+@media (min-width: 1200px) {
+  hr.hairline {
+    width: 1110px;
+  }
+  nav ul.nav-side {
+    width: 263px;
+}
+}
+hr.hairline {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 1px rgba(127, 127, 127, 0.25);
+}
+
+
+/* Document css */
 .library-list,
 .library-list,
 .library-list {
@@ -101,8 +193,8 @@ p {
 .library-list .library-item,
 .library-list .library-item {
   width: 45%;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 70px;
   border-top: 3px solid black;
 }
 @media only screen and (max-width: 340px) {
@@ -207,93 +299,4 @@ p {
   width: auto;
   height: auto;
 }
-/* library-list CSS end */
-
-.hero-sub+.hairline+.section,
-.hero-sub+.section{
-  padding-top: 40px;
-}
-.section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.section .hero-sub {
-  padding-top: 28px;
-  padding-bottom:  28px;
-}
-.intro{
-  margin-bottom: 26px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.555555556;
-}
-a:hover, a:focus {
-    color: #008c99;
-    text-decoration: none;
-}
-
-a {
-    color: #0ab0bf;
-    font-weight: inherit;
-    text-decoration: none;
-}
-ul {
-  margin-top: 0;
-  margin-bottom: 13px;
-}
-
-#features nav ul.nav-side li {
-    font-weight: 700;
-    margin: 0 0 15px 0;
-}
-
-#features nav ul.nav-side li a {
-    display: block;
-    padding-left: 12px;
-    color: #2c2c2c;
-    border-left: 5px solid #fff;
-}
-@media (min-width: 768px) {
-  .intro{
-    font-size: 18px;
-  }
-  hr.hairline {
-    width: 690px;
-  }
-  #features nav {
-    padding-bottom: 70px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  nav ul.nav-side {
-    width: 158px;
-}
-}
-@media (min-width: 992px) {
-  hr.hairline {
-    width: 910px;
-  }
-   nav ul.nav-side {
-    width: 213px;
-}
-}
-@media (min-width: 1200px) {
-  hr.hairline {
-    width: 1110px;
-  }
-  nav ul.nav-side {
-    width: 263px;
-}
-}
-hr.hairline {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: solid 1px rgba(127, 127, 127, 0.25);
-}
+/* Document CSS end */
