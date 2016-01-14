@@ -8,10 +8,5 @@
  * Controller of the e2eIntroApp
  */
 angular.module('e2eIntroApp').controller('MainCtrl', function () {
-  this.addTodo = function() {
-    this.todos.push(this.todo);
-  };
 
-
-  this.todos = ['item1', 'item2', 'item3'];
 });
