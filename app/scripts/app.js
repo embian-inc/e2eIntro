@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/feature', {
+        templateUrl: 'views/feature.html',
+        controller: 'FeatureCtrl',
+        controllerAs: 'feature'
+      })
       .otherwise({
         redirectTo: '/'
       });
