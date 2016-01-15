@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'fancyboxplus'
   ])
   .config(function ($routeProvider) {
     $routeProvider
