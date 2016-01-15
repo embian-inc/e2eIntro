@@ -34,6 +34,11 @@ angular
         controller: 'FeatureCtrl',
         controllerAs: 'feature'
       })
+      .when('/architecture', {
+        templateUrl: 'views/architecture.html',
+        controller: 'ArchitectureCtrl',
+        controllerAs: 'architecture'
+      })
       .otherwise({
         redirectTo: '/'
       });

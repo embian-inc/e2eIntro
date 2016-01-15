@@ -249,10 +249,11 @@ hr.hairline {
 .library-list .library-item,
 .library-list .library-item,
 .library-list .library-item {
-  width: 45%;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 70px;
   border-top: 3px solid black;
+  align: center;
 }
 @media only screen and (max-width: 340px) {
   .library-list .library-item,
@@ -339,18 +340,19 @@ hr.hairline {
   font-size: 15px;
   font-weight: 300;
   color: #1ccab3 !important;
+  float:right;
+}
+
+/*.library-list .library-item:last-child,
+.library-list .library-item:last-child,
+.library-list .library-item:last-child {
+  float: right;
 }
 .library-list .library-item:first-child,
 .library-list .library-item:first-child,
 .library-list .library-item:first-child {
   float: left;
-}
-.library-list .library-item:last-child,
-.library-list .library-item:last-child,
-.library-list .library-item:last-child {
-  float: right;
-}
-
+}*/
 .size-full {
   max-width: 100%;
   width: auto;
