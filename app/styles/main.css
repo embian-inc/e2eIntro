@@ -24,6 +24,15 @@ p {
   height: 75px;
   background-color: #000;
 }
+.navbar {
+  min-height : 75px;
+}
+.navbar-nav {
+  margin-top: 13px;
+}
+.navbar-toggle {
+  margin-top: 20px;
+}
 .nav > li > a {
   color:#fff;
 }
