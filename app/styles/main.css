@@ -42,7 +42,7 @@ p {
 }
 .main_theme {
   height: 575px;
-  background-image: url('/images/apm_hero_poster.jpg');
+  background-image: url('/images/apm_hero_poster.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
