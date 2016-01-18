@@ -1,102 +1,128 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Embian APM, e2eMon</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/fancybox-plus/css/jquery.fancybox-plus.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body id="body" ng-app="e2eIntroApp">
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Embian APM, e2eMon</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/fancybox-plus/css/jquery.fancybox-plus.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body id="body" ng-app="e2eIntroApp">
+  <!--[if lte IE 8]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="header row">
-      <div class="row" style="position:relative; margin:0 auto; width:1200px; padding:18px 10px 0 10px;">
-        <div class="logo" style="float:left">
-          <a ng-href="#/">
-            <div style="float:left">
-              <span class="glyphicon glyphicon-stats" aria-hidden="true" style="font-size:25pt; color:#78A300"></span>
-            </div>
-            <div style="float:left; color:#fff; line-height:1em; padding:0 0 0 8px">
-              <p style="font-size:10px;">Embain APM</p>
-              <p style="font-size:27px;">e2eMon</p>
-            </div>
-          </a>
-        </div>
-        <div style="float:left; padding-left:60px">
-          <ul class="nav navbar-nav">
-            <li><a ng-href="#/feature">e2eMon의 특징</a></li>
-            <li><a ng-href="#/architecture">시스템 아키텍쳐</a></li>
-            <li><a ng-href="#/document#body">관련 문서</a></li>
-            <li><a ng-href="http://www.embian.com/" target="_blank">Embian 소개</a></li>
-            <li><a ng-href="http://blog.embian.com/" target="_blank">Embian Blog</a></li>
-          </ul>
-        </div>
+  <!-- Add your site or application content here -->
+  <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand " href="#/"><span class="glyphicon glyphicon-stats" aria-hidden="true" style="font-size:25pt; color:#78A300">e2eMon</span></a>
+      </div>
+      <div class="collapse navbar-collapse" uib-collapse="navCollapsed" >
+        <ul class="nav navbar-nav">
+          <li><a ng-href="#/feature">e2eMon의 특징</a></li>
+          <li><a ng-href="#/architecture">시스템 아키텍쳐</a></li>
+          <li><a ng-href="#/document#body">관련 문서</a></li>
+          <li><a ng-href="http://www.embian.com/" target="_blank">Embian 소개</a></li>
+          <li><a ng-href="http://blog.embian.com/" target="_blank">Embian Blog</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
+  <!-- <div class="header row">
+  <div class="row" style="position:relative; margin:0 auto; width:1200px; padding:18px 10px 0 10px;">
+  <div class="logo" style="float:left">
+  <a ng-href="#/">
+  <div style="float:left">
+  <span class="glyphicon glyphicon-stats" aria-hidden="true" style="font-size:25pt; color:#78A300"></span>
+</div>
+<div style="float:left; color:#fff; line-height:1em; padding:0 0 0 8px">
+<p style="font-size:10px;">Embain APM</p>
+<p style="font-size:27px;">e2eMon</p>
+</div>
+</a>
+</div>
+<div style="float:left; padding-left:60px">
+<ul class="nav navbar-nav">
+<li><a ng-href="#/feature">e2eMon의 특징</a></li>
+<li><a ng-href="#/architecture">시스템 아키텍쳐</a></li>
+<li><a ng-href="#/document#body">관련 문서</a></li>
+<li><a ng-href="http://www.embian.com/" target="_blank">Embian 소개</a></li>
+<li><a ng-href="http://blog.embian.com/" target="_blank">Embian Blog</a></li>
+</ul>
+</div>
+</div>
+</div> -->
 
-    <div class="main">
-      <div ng-view=""></div>
+<div class="main">
+  <div ng-view=""></div>
+</div>
+
+<div class="footer">
+  <div class="container">
+  <div class="row" style="position:relative; margin:0 auto; padding:20px 10px 0 10px;">
+    <div style="float:left; font-size:25px; font-weight:bold; color:#78A300">
+      Embian
     </div>
-
-    <div class="footer">
-      <div class="row" style="position:relative; margin:0 auto; width:1200px; padding:20px 10px 0 10px;">
-        <div style="float:left; font-size:25px; font-weight:bold; color:#78A300">
-          Embian
-        </div>
-        <div style="float:right; font-size:12px; color:#fff; padding-top:13px">
-          서울시 강남구 현대벤쳐빌 1517호. 02-2040-6788. embian@embian.com. ©Copyright 2016. Embian, Inc. All rights reserved.
-        </div>
-      </div>
+    <div style="float:right; font-size:12px; color:#fff; padding-top:13px">
+      서울시 강남구 현대벤쳐빌 1517호. 02-2040-6788. embian@embian.com. ©Copyright 2016. Embian, Inc. All rights reserved.
     </div>
+  </div>
+</div>
+</div>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+  (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+  r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+}(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+ga('create', 'UA-XXXXX-X');
+ga('send', 'pageview');
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/fancybox-plus/src/jquery.fancybox-plus.js"></script>
-    <script src="bower_components/angular-fancybox-plus/js/angular-fancybox-plus.js"></script>
-    <!-- endbower -->
 
-    <!-- endbuild -->
+</script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/document.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/feature.js"></script>
-        <script src="scripts/controllers/architecture.js"></script>
-        <!-- endbuild -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/fancybox-plus/src/jquery.fancybox-plus.js"></script>
+<script src="bower_components/angular-fancybox-plus/js/angular-fancybox-plus.js"></script>
+<!-- endbower -->
+
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/document.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/feature.js"></script>
+<script src="scripts/controllers/architecture.js"></script>
+<!-- endbuild -->
 </body>
 </html>
