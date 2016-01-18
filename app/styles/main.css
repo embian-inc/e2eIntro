@@ -60,6 +60,12 @@ p {
 .sub-title {
   font-weight: bold;
 }
+.sub-title small,
+.detail-sub-title small,
+h6 small,
+.h3 small {
+  color: #d1d1d1;
+}
 .list-unstyled > li {
   line-height: 1.5em;
   margin-bottom:20px;
