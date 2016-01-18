@@ -263,6 +263,17 @@ hr.hairline {
   border-top: 3px solid black;
   align: center;
 }
+
+.library-list .library-item2,
+.library-list .library-item2,
+.library-list .library-item2 {
+  width: 45%;
+  margin-top: 0;
+  margin-bottom: 70px;
+  border-top: 3px solid black;
+  align: center;
+}
+
 @media only screen and (max-width: 340px) {
   .library-list .library-item,
   .library-list .library-item,
@@ -351,16 +362,16 @@ hr.hairline {
   float:right;
 }
 
-/*.library-list .library-item:last-child,
-.library-list .library-item:last-child,
-.library-list .library-item:last-child {
+.library-list .library-item2:last-child,
+.library-list .library-item2:last-child,
+.library-list .library-item2:last-child {
   float: right;
 }
-.library-list .library-item:first-child,
-.library-list .library-item:first-child,
-.library-list .library-item:first-child {
+.library-list .library-item2:first-child,
+.library-list .library-item2:first-child,
+.library-list .library-item2:first-child {
   float: left;
-}*/
+}
 .size-full {
   max-width: 100%;
   width: auto;
