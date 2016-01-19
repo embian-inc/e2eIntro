@@ -48,7 +48,16 @@ p {
 }
 .nav > li > a:visited {
   background-color: #000;
+<<<<<<< HEAD
 }*/
+
+.scroll {
+  display: inline;
+  font-size: 14px;
+  /* padding-left: 10px; */
+  color: #2c2c2c;
+  border-left: 5px solid #fff;
+}
 /*.first{
   text-align: center;
 }*/
@@ -221,7 +230,6 @@ a.fancy-image {
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 a.archi-fancy-image {
   min-height: 241px;
   max-width: 566px;
@@ -240,11 +248,18 @@ a.archi-fancy-image {
   width: 100% \9;
   max-width: 100%;
   height: auto;
-  border:5px solid #222;
+  /*border:3px solid #cfe1ef;*/
   border-radius: 10px;
 }
+
 .affix {
   position: static;
+}
+.image-border1 {
+  border:3px solid #15909d;
+}
+.image-border2 {
+  border:3px solid #f1f1f1;
 }
 @media (min-width: 768px) {
   .bs-sidebar.affix {
