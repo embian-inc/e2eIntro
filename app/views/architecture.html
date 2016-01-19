@@ -15,11 +15,22 @@
       <section class="first" id="e2e-platform">
       <div class="content">
         <h2 class="tagline">e2eMon은 어떻게  동작하나요?</h2>
-        <p>
+        <!-- <p>
           e2eMon은 모니터링 대상 시스템에서 추적에 필요한 정보를 수집 후 해당 정보를 처리하여 운영자가 사용하는 프로그램에  Display 해 줍니다.
           그렇기 때문에 e2eMon은 다양한 대시보드 뷰, 실제 사용자 모니터링 및 실시간 토폴로지 뷰 기능을 통해 애플리케이션에 대한 통합 성능 모니터링이 가능하고, 시스템 자원, 애플리케이션 운용 및 장애 발생 운용에 대한 통계 데이터를 바탕으로, IT 서비스 운영 비용을 절감 할 수 있으며,
           지속적인 시스템의 성능 모니터링으로 발생할 가능성이 있는 위험을 예측하고 미연에 방지할 수 있습니다.
+        </p> -->
+        <p>
+          e2e Mon은 크게 3단계로 동작합니다.<br />
+          모니터링 대상 시스템에서 추적에 필요한 정보를 수집하고 수집된 정보를 분류, 재가공하여 저장한뒤 저장된 정보를 가져와 Web Client로 보여줍니다. <br /><br />
+          각 단계에서 이루어지는 동작을 자세히 살펴보면 먼저 모니터링 대상 시스템에서 생성된 추적에 필요한 정보를 Log Collector가 파일에 적게 됩니다. <br />
+          Log Stash는 해당 로그 파일을 감시하고 있다가 Log Collector가 정보를 파일에 적으면, 그걸 바로 읽어서 Message Queue(Kafka)로 실어 보내게 되고,<br />
+          Message Queue Consumer는 Message Queue를 감시하고 있다가 Message가 들어오면 바로 읽어서 Search Engine (Elastic Search)에 저장하게 됩니다.<br />
+          이렇게 일련의 단계를 거쳐 Search Engine에 저장된 정보는 다시 Log Composer가 주기적인 배치 작업을 통해 저장된 정보를 Transaction 별로 분류하고, Transaction 관련 통계 정보를 생성하는 과정을 수행합니다.<br />
+          Log Composer에 의해 분류 및 재가공된 정보는 다시 용도에 따라 Search Engine(Elastic Search)과 RDB(PostgreSQL)에 나누어 저장되게 되고, <br />
+          이렇게 저장된 정보는 API Server를 통해 Web Client로 전송되어 사용자에게 보여지게 됩니다.
         </p>
+
         <a href="images/system_architecture.png" class="product-diagram" style="height: 450px; text-align: center" fancyboxable="e2eMon">
           <img src="images/system_architecture.png" alt="e2eMon">
         </a>
