@@ -13,11 +13,11 @@ body {
 p {
   margin: 0;
 }
-.row {
+/*.row {
     margin: 0;
     margin-left: -5px;
     margin-right: -15px;
-}
+}*/
 .header {
   height: 75px;
   background-color: #000;
@@ -25,7 +25,7 @@ p {
 }
 .footer {
   height: 75px;
-  background-color: #000;
+  background-color: #225378;
 }
 .navbar {
   min-height : 75px;
@@ -102,6 +102,7 @@ h6 small,
 .features-tbl {
   width:550px;
   border:5px solid #ddd;
+  margin: 0 auto;
 }
 .features-tbl th {
   font-size: 20px;
