@@ -49,9 +49,9 @@ p {
 .nav > li > a:visited {
   background-color: #000;
 }
-.first{
+/*.first{
   text-align: center;
-}
+}*/
 .product-diagram {
   margin-top: 20px;
 }
@@ -210,6 +210,36 @@ a.fancy-image {
   max-width: 100%;
   height: auto;
 }
+
+.architecture-detail {
+  margin:50px 0px;
+}
+.architecture-detail h3{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+a.archi-fancy-image {
+  min-height: 241px;
+  max-width: 566px;
+  position: relative;
+  display: none;
+  border: 0px solid #d7d7d7;
+  margin: 0 0 20px;
+  -webkit-transition: border-color 0.25s 0s ease-in-out;
+  -moz-transition: border-color 0.25s 0s ease-in-out;
+  -ms-transition: border-color 0.25s 0s ease-in-out;
+  -o-transition: border-color 0.25s 0s ease-in-out;
+  transition: border-color 0.25s 0s ease-in-out;
+}
+.archi-img-responsive {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+  border:5px solid #222;
+  border-radius: 10px;
+}
 @media (min-width: 768px) {
   .intro{
     font-size: 18px;
@@ -237,6 +267,9 @@ a.fancy-image {
     width: 50%;
   }
   a.fancy-image {
+    display: block;
+  }
+  a.archi-fancy-image {
     display: block;
   }
 }
