@@ -49,6 +49,13 @@ p {
 .nav > li > a:visited {
   background-color: #000;
 }
+.scroll {
+  display: inline;
+  font-size: 14px;
+  /* padding-left: 10px; */
+  color: #2c2c2c;
+  border-left: 5px solid #fff;
+}
 /*.first{
   text-align: center;
 }*/
@@ -219,14 +226,6 @@ a.fancy-image {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.architecture-detail .first-child {
-  float:left;
-  width:46%;
-}
-.architecture-detail .last-child {
-  float:right;
-  width:46%;
-}
 a.archi-fancy-image {
   min-height: 241px;
   max-width: 566px;
@@ -249,7 +248,7 @@ a.archi-fancy-image {
   border-radius: 10px;
 }
 .image-border1 {
-  border:3px solid #9fc4df;
+  border:3px solid #15909d;
 }
 .image-border2 {
   border:3px solid #f1f1f1;
