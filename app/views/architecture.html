@@ -12,56 +12,54 @@
   <div class="container">
     <div class="row">
 
-      <section class="first" id="e2e-platform">
-      <div class="content">
-        <h2 class="tagline">e2eMon은 어떻게  동작하나요?</h2>
-        <!-- <p>
-          e2eMon은 모니터링 대상 시스템에서 추적에 필요한 정보를 수집 후 해당 정보를 처리하여 운영자가 사용하는 프로그램에  Display 해 줍니다.
-          그렇기 때문에 e2eMon은 다양한 대시보드 뷰, 실제 사용자 모니터링 및 실시간 토폴로지 뷰 기능을 통해 애플리케이션에 대한 통합 성능 모니터링이 가능하고, 시스템 자원, 애플리케이션 운용 및 장애 발생 운용에 대한 통계 데이터를 바탕으로, IT 서비스 운영 비용을 절감 할 수 있으며,
-          지속적인 시스템의 성능 모니터링으로 발생할 가능성이 있는 위험을 예측하고 미연에 방지할 수 있습니다.
+      <section class="first" id="e2e-platform" style="margin-bottom:70px;">
+        <div class="content">
+          <h2 class="tagline">e2eMon은 어떻게  동작하나요?</h2>
+          <!-- <p>
+            e2eMon은 모니터링 대상 시스템에서 추적에 필요한 정보를 수집 후 해당 정보를 처리하여 운영자가 사용하는 프로그램에  Display 해 줍니다.
+            그렇기 때문에 e2eMon은 다양한 대시보드 뷰, 실제 사용자 모니터링 및 실시간 토폴로지 뷰 기능을 통해 애플리케이션에 대한 통합 성능 모니터링이 가능하고, 시스템 자원, 애플리케이션 운용 및 장애 발생 운용에 대한 통계 데이터를 바탕으로, IT 서비스 운영 비용을 절감 할 수 있으며,
+            지속적인 시스템의 성능 모니터링으로 발생할 가능성이 있는 위험을 예측하고 미연에 방지할 수 있습니다.
 
-          각 단계에서 이루어지는 동작을 자세히 살펴보면 먼저 모니터링 대상 시스템에서 생성된 추적에 필요한 정보를 Log Collector가 파일에 적게 됩니다. <br />
-          Log Stash는 해당 로그 파일을 감시하고 있다가 Log Collector가 정보를 파일에 적으면, 그걸 바로 읽어서 Message Queue(Kafka)로 실어 보내게 되고,<br />
-          Message Queue Consumer는 Message Queue를 감시하고 있다가 Message가 들어오면 바로 읽어서 Search Engine (Elastic Search)에 저장하게 됩니다.<br />
-          이렇게 일련의 단계를 거쳐 Search Engine에 저장된 정보는 다시 Log Composer가 주기적인 배치 작업을 통해 저장된 정보를 Transaction 별로 분류하고, Transaction 관련 통계 정보를 생성하는 과정을 수행합니다.<br />
-          Log Composer에 의해 분류 및 재가공된 정보는 다시 용도에 따라 Search Engine(Elastic Search)과 RDB(PostgreSQL)에 나누어 저장되게 되고, <br />
-          이렇게 저장된 정보는 API Server를 통해 Web Client로 전송되어 사용자에게 보여지게 됩니다.
-        </p> -->
-        <p>
-          e2eMon의 동작은 크게 4단계로 나눌 수 있습니다.<br />
-          <ul style="list-style: initial">
-            <li><b> 기초로그 수집</b> - 모니터링 대상 시스템에서 추적에 필요한 기초 로그 정보를 수집</li>
-            <li><b> 기초로그 저장</b> - 수집된 기초 로그 정보를 1차 저장</li>
-            <li><b>Tx Log추출 &amp; 저장</b> - 1차 저장된 정보를 분류, 재가공하여 Transaction Log의 형태로 2차 저장</li>
-            <li><b>Contents Display</b> - 저장된 정보를 가져와 Web Client로 Display.</li>
-          </ul>
-        </p>
+            각 단계에서 이루어지는 동작을 자세히 살펴보면 먼저 모니터링 대상 시스템에서 생성된 추적에 필요한 정보를 Log Collector가 파일에 적게 됩니다. <br />
+            Log Stash는 해당 로그 파일을 감시하고 있다가 Log Collector가 정보를 파일에 적으면, 그걸 바로 읽어서 Message Queue(Kafka)로 실어 보내게 되고,<br />
+            Message Queue Consumer는 Message Queue를 감시하고 있다가 Message가 들어오면 바로 읽어서 Search Engine (Elastic Search)에 저장하게 됩니다.<br />
+            이렇게 일련의 단계를 거쳐 Search Engine에 저장된 정보는 다시 Log Composer가 주기적인 배치 작업을 통해 저장된 정보를 Transaction 별로 분류하고, Transaction 관련 통계 정보를 생성하는 과정을 수행합니다.<br />
+            Log Composer에 의해 분류 및 재가공된 정보는 다시 용도에 따라 Search Engine(Elastic Search)과 RDB(PostgreSQL)에 나누어 저장되게 되고, <br />
+            이렇게 저장된 정보는 API Server를 통해 Web Client로 전송되어 사용자에게 보여지게 됩니다.
+          </p> -->
+          <p>
+            e2eMon의 동작은 크게 4단계로 나눌 수 있습니다.<br />
+            <ul style="list-style: initial">
+              <li><b> 기초로그 수집</b> - 모니터링 대상 시스템에서 추적에 필요한 기초 로그 정보를 수집</li>
+              <li><b> 기초로그 저장</b> - 수집된 기초 로그 정보를 1차 저장</li>
+              <li><b>Tx Log추출 &amp; 저장</b> - 1차 저장된 정보를 분류, 재가공하여 Transaction Log의 형태로 2차 저장</li>
+              <li><b>Contents Display</b> - 저장된 정보를 가져와 Web Client로 Display.</li>
+            </ul>
+          </p>
 
-        <a href="images/system-architecture.png" class="product-diagram" style="height: 450px; text-align: center" fancyboxable="e2eMon">
-          <img src="images/system-architecture.png" alt="e2eMon System Architecture">
-        </a>
-      </div>
-
-    </section>
+          <a href="images/system-architecture.png" class="product-diagram" style="height: 450px; text-align: center" fancyboxable="e2eMon">
+            <img src="images/system-architecture.png" alt="e2eMon System Architecture">
+          </a>
+        </div>
+      </section>
     </div>
-  <div id="copy-btm"></div>
   </div>
 </section>
 
-<section id="druid">
+<section>
   <div style="background-color:#b7d2e7;">
     <div class="container">
       <div class="architecture-detail row">
-        <div style="float:left; width:40%;">
+        <div class="first-child">
           <h3>1. 기초로그 수집</h3>
           <ul style="list-style: initial">
             <li>TxLogger(Bytecode Instrumentation + Library)를 이용해 Tracking Log를 File에 기록</li>
             <li>Log Stash를 이용해 Log File에 적히는 Tracking Log를 실시간으로 수집 &amp; Message Queue에 전송</li>
           </ul>
         </div>
-        <div style="float:right; width:45%;">
+        <div class="last-child">
           <a href="images/system-architecture-sub1.png" class="archi-fancy-image" fancyboxable="sys-archi-sub1">
-            <img alt="sys-archi-sub1" class="archi-img-responsive" src="images/system-architecture-sub1.png" />
+            <img alt="sys-archi-sub1" class="archi-img-responsive image-border1" src="images/system-architecture-sub1.png"/>
           </a>
         </div>
       </div>
@@ -69,41 +67,41 @@
   </div>
 </section>
 
-<section id="druid">
+<section>
   <div style="background-color:#fff;">
     <div class="container">
       <div class="architecture-detail row">
-        <div style="float:right; width:40%;">
+        <div class="first-child">
+          <a href="images/system-architecture-sub2.png" class="archi-fancy-image" fancyboxable="sys-archi-sub1">
+            <img alt="sys-archi-sub1" class="archi-img-responsive image-border2" src="images/system-architecture-sub2.png" />
+          </a>
+        </div>
+        <div class="last-child">
           <h3>2. 기초로그 저장</h3>
           <ul style="list-style: initial">
             <li>Consumer가 Message Queue에 있는 Log들을 가져와 Elastic Seach Engine에 저장</li>
           </ul>
         </div>
-        <div style="float:left; width:45%;">
-          <a href="images/system-architecture-sub2.png" class="archi-fancy-image" fancyboxable="sys-archi-sub1">
-            <img alt="sys-archi-sub1" class="archi-img-responsive" src="images/system-architecture-sub2.png" />
-          </a>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="druid">
+<section>
   <div style="background-color:#b7d2e7;">
     <div class="container">
       <div class="architecture-detail row">
-        <div style="float:left; width:40%;">
+        <div class="first-child">
           <h3>3. Tx Log추출 &amp; 저장</h3>
           <ul style="list-style: initial">
             <li>Elastic에 저장된 기초 Log를 가져와 Tx Log로 정제 후 다시 Elastic에 저장</li>
             <li>에러 경보 프로세스 실행</li>
-            <li>Tx Log통계 연산 후 Pgsql에 저장</li>
+            <li>Tx Log통계 연산 후 PostgreSQL에 저장</li>
           </ul>
         </div>
-        <div style="float:right; width:45%;">
+        <div class="last-child">
           <a href="images/system-architecture-sub3.png" class="archi-fancy-image" fancyboxable="sys-archi-sub1">
-            <img alt="sys-archi-sub1" class="archi-img-responsive" src="images/system-architecture-sub3.png" />
+            <img alt="sys-archi-sub1" class="archi-img-responsive image-border1" src="images/system-architecture-sub3.png" />
           </a>
         </div>
       </div>
@@ -111,20 +109,20 @@
   </div>
 </section>
 
-<section id="druid">
+<section>
   <div style="background-color:#fff;">
     <div class="container">
       <div class="architecture-detail row">
-        <div style="float:right; width:40%;">
+        <div class="first-child">
+          <a href="images/system-architecture-sub4.png" class="archi-fancy-image" fancyboxable="sys-archi-sub1">
+            <img alt="sys-archi-sub1" class="archi-img-responsive image-border2" src="images/system-architecture-sub4.png" />
+          </a>
+        </div>
+        <div class="last-child">
           <h3>4. Contents Display</h3>
           <ul style="list-style: initial">
-            <li>API Server를 통해 필요한 정보를 Web Client로 디스플레이</li>
+            <li>Search Engin과 RDB에 저장된 정보를 API Server를 통해 가져와 Web Client에 Display</li>
           </ul>
-        </div>
-        <div style="float:left; width:45%;">
-          <a href="images/system-architecture-sub4.png" class="archi-fancy-image" fancyboxable="sys-archi-sub1">
-            <img alt="sys-archi-sub1" class="archi-img-responsive" src="images/system-architecture-sub4.png" />
-          </a>
         </div>
       </div>
     </div>
