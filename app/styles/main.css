@@ -13,11 +13,11 @@ body {
 p {
   margin: 0;
 }
-.row {
+/*.row {
     margin: 0;
     margin-left: -5px;
     margin-right: -15px;
-}
+}*/
 .header {
   height: 75px;
   background-color: #000;
