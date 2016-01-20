@@ -16,8 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ui.bootstrap',
-    'fancyboxplus',
-    "chart.js"
+    'fancyboxplus'
   ])
   .config(function ($routeProvider) {
     $routeProvider
