@@ -114,7 +114,8 @@ h6 small,
 	font-weight: bold;
 }
 .features-tbl {
-  width:550px;
+  /*width:550px;*/
+  width: 100%;
   text-align: center;
   /*border:5px solid #ddd;*/
   margin: 0 auto;
@@ -263,7 +264,7 @@ a.archi-fancy-image {
   position: static;
 }
 .image-border1 {
-  border:3px solid #15909d;
+  border:3px solid #225378;
 }
 .image-border2 {
   border:3px solid #f1f1f1;
