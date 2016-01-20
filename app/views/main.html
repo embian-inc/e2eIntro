@@ -44,7 +44,7 @@
   </div>
 </div>
 </div>
-<div style="width: 100%; background-color:#1695A3; color: #fff">
+<div style="width: 100%; background-color:#db9e36; color: #fff">
   <div class="container">
   <div style="position:relative; padding:70px 0px">
     <div class="row row-margin-bottom">
@@ -74,8 +74,11 @@
             <p class="sub-title">장애 위치 표시</p>
             <p>Server Map은 트랜젝션이 실패하거나 구성 요소간 연결이 끊기는 경우, 어디에서 문제가 발생했는지 바로 확인할 수 있도록 그 위치를 화면에 표시해 줍니다.</p>
           </li>
+
           <!-- <li>
             <p class="sub-title">실시간 모니터링 <small style="color:#3a98ab;">[개발예정]</small></p>
+          <li>
+            <p class="sub-title">실시간 모니터링 <small style="color:#1bb9ca;">[개발예정]</small></p>
             <p>시스템의 상태를 실시간으로 모니터링 할 수 있도록 모니터링 관련 데이터는 모두 실시간으로 수집되고, 그 변화에 따라 화면도 자동으로 업데이트 됩니다.</p>
           </li> -->
         </ul>
@@ -90,7 +93,7 @@
   </div>
 </div>
 
-<div style="width: 100%">
+<div style="width: 100%" id="alert-feature-div">
   <div class = "container" style="margin-top: 50px">
   <div class="row row-margin-bottom">
       <header class="text-center">
@@ -132,7 +135,7 @@
   "e2eMon은 서비스 전체를 관통하는 모니터링툴의 역할 뿐만 아니라, 문제 해결의 시작점으로써 웹 비지니스 지향 시스템의 일부가 되는 것을 목표로 합니다."
   </div>
 </div>
-<div style="position:relative; margin-top: 50px; margin-bottom:50px">
+<div style="position:relative; margin-top: 50px; margin-bottom:50px" id="apx-div">
   <div class="container">
   <div class="row vcenter-row col-padding-bottom">
     <div class="col-md-6 vcenter-sm" style="padding-top:50px; padding-bottom: 50px">
@@ -143,13 +146,43 @@
       <p style="padding:10px 0px">서비스 사용자의 측면에서 서비스의 품질을 파악하고 대처할 수 있도록 사용자 관점에서 느끼는 애플리케이션의 성능을 수치화(Application Performance Index)해서 보여줍니다.</p>
     </div>
     <aside class="col-md-6 alerting-graphic hidden-sm hidden-xs">
-      <img src="images/apdex.png">
+      <!-- <img src="images/apdex.png"> -->
+      <div class="row" style="background-color:#fff; height:220px; margin-right:0; margin-left:0">
+        <div style="float:left; width:220px; height:100%; padding:15px 20px">
+          <div class="box-subtitle"><span class="glyphicon glyphicon-stats"></span> Sign Up</div>
+          <div style="position:relative; width:100%; height:100%;">
+            <canvas id="cpu-pvc-canvas" style="width:100%; height:100%; padding:20px"></canvas>
+            <div style="position:absolute; top:72px;left:0; text-align:center; width:100%"><span class="dn-chart-val">35%</span></div>
+          </div>
+        </div>
+        <div style="float:left; width:220px; height:100%; padding:15px 20px">
+          <div class="box-subtitle"><span class="glyphicon glyphicon-stats"></span> Comapre Product</div>
+          <div style="position:relative; width:100%; height:100%">
+            <canvas id="cpu-vmw-canvas" style="width:100%; height:100%; padding:20px"></canvas>
+            <div style="position:absolute; top:72px;left:0; text-align:center; width:100%"><span class="dn-chart-val">58%</span></div>
+          </div>
+        </div>
+        <div style="float:left; width:220px; height:100%; padding:15px 20px">
+          <div class="box-subtitle"><span class="glyphicon glyphicon-stats"></span> Cart Checkout</div>
+          <div style="position:relative; width:100%; height:100%">
+            <canvas id="ram-pvc-canvas" style="width:100%; height:100%; padding:20px"></canvas>
+            <div style="position:absolute; top:72px;left:0; text-align:center; width:100%"><span class="dn-chart-val">17%</span></div>
+          </div>
+        </div>
+        <div style="float:left; width:220px; height:100%; padding:15px 20px">
+          <div class="box-subtitle"><span class="glyphicon glyphicon-stats"></span> SHARE</div>
+          <div style="position:relative; width:100%; height:100%">
+            <canvas id="ram-vmw-canvas" style="width:100%; height:100%; padding:20px"></canvas>
+            <div style="position:absolute; top:72px;left:0; text-align:center; width:100%"><span class="dn-chart-val">68%</span></div>
+          </div>
+        </div>
+      </div>
     </aside>
   </div>
 </div>
 </div>
 
-<div style="background-color:#DB9E36; text-align:center; color: #fff; line-height:150px">
+<div style="background-color:#1695A3; text-align:center; color: #fff; line-height:150px">
   "e2eMon은 적용하기 쉽습니다. 그리고 사용하기 편합니다. 이러한 장점들을 통해 APM 도입을 고려하는 많은 분들에게 편하게 가다가고자 합니다."
 </div>
 

@@ -108,6 +108,11 @@ h6 small,
   background-position: center top;
   background-color: #000;
 }
+.dn-chart-val {
+	color: #1175AE;
+	font-size: 24pt;
+	font-weight: bold;
+}
 .features-tbl {
   width:550px;
   text-align: center;
