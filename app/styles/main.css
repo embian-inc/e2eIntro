@@ -235,6 +235,11 @@ a.fancy-image {
   height: auto;
 }
 
+.arrow-container {
+  text-align:center;
+  height:0; 
+  color:#1EA0B9;
+}
 .architecture-arrow1 {
   font-size: 45pt;
   top:-42px;
@@ -244,7 +249,6 @@ a.fancy-image {
   font-size: 45pt;
   top:-22px;
   left: -33px;
-
 }
 .architecture-detail {
   margin:120px 0 100px 0;
