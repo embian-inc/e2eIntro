@@ -78,20 +78,19 @@ angular.module('e2eIntroApp').controller('MainCtrl', function ($scope) {
 
   $(window).scroll(function(){
     var height = $(window).scrollTop();
-    var alert_feature = $('#alert-feature-div').position().top;
-
-    var cp_pvc_ctx = document.getElementById("cpu-pvc-canvas").getContext("2d");
-    var cp_vmw_ctx = document.getElementById("cpu-vmw-canvas").getContext("2d");
-    var ram_pvc_ctx = document.getElementById("ram-pvc-canvas").getContext("2d");
-    var ram_vmw_ctx = document.getElementById("ram-vmw-canvas").getContext("2d");
-
-    if(height >= alert_feature && height <= alert_feature + 100){
-        window.myDoughnut = new Chart(cp_pvc_ctx).Doughnut(cpu_pvc_val, {responsive : false, percentageInnerCutout : 60});
-        window.myDoughnut = new Chart(cp_vmw_ctx).Doughnut(cpu_vmw_val, {responsive : false, percentageInnerCutout : 60});
-        window.myDoughnut = new Chart(ram_pvc_ctx).Doughnut(ram_pvc_val, {responsive : false, percentageInnerCutout : 60});
-        window.myDoughnut = new Chart(ram_vmw_ctx).Doughnut(ram_vmw_val, {responsive : false, percentageInnerCutout : 60});
-      }
-
+    var alert_feature = ($('#alert-feature-div').offset() || { "top": NaN }).top;
+    if (isNaN(alert_feature) === false){
+        var cp_pvc_ctx = document.getElementById("cpu-pvc-canvas").getContext("2d");
+        var cp_vmw_ctx = document.getElementById("cpu-vmw-canvas").getContext("2d");
+        var ram_pvc_ctx = document.getElementById("ram-pvc-canvas").getContext("2d");
+        var ram_vmw_ctx = document.getElementById("ram-vmw-canvas").getContext("2d");
+        if(height >= alert_feature && height <= alert_feature + 100){
+          window.myDoughnut = new Chart(cp_pvc_ctx).Doughnut(cpu_pvc_val, {responsive : false, percentageInnerCutout : 60});
+          window.myDoughnut = new Chart(cp_vmw_ctx).Doughnut(cpu_vmw_val, {responsive : false, percentageInnerCutout : 60});
+          window.myDoughnut = new Chart(ram_pvc_ctx).Doughnut(ram_pvc_val, {responsive : false, percentageInnerCutout : 60});
+          window.myDoughnut = new Chart(ram_vmw_ctx).Doughnut(ram_vmw_val, {responsive : false, percentageInnerCutout : 60});
+        }
+    }
   });
 
 });
