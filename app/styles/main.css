@@ -76,6 +76,7 @@ p {
   font-weight: bold;
 }
 h6 small,
+h4 small,
 .h3 small,
 .sub-title small,
 .detail-sub-title small {
@@ -205,6 +206,9 @@ ul {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.item h4 {
+  font-weight: bold;
+}
 
 #features .feature-block>div {
     width: 100%;
@@ -231,8 +235,19 @@ a.fancy-image {
   height: auto;
 }
 
+.architecture-arrow1 {
+  font-size: 45pt;
+  top:-42px;
+  left:32px;
+}
+.architecture-arrow2 {
+  font-size: 45pt;
+  top:-22px;
+  left: -33px;
+
+}
 .architecture-detail {
-  margin:50px 0px;
+  margin:120px 0 100px 0;
 }
 .architecture-detail h3{
   font-weight: bold;
