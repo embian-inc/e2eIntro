@@ -39,18 +39,6 @@ p {
 .navbar-toggle {
   margin-top: 20px;
 }
-/*.nav > li > a {
-  color:#fff;
-}
-.nav > li > a:hover {
-  background-color: #000;
-  color:#78A300;
-}
-.nav > li > a:visited {
-  background-color: #000;
-<<<<<<< HEAD
-}*/
-
 .scroll {
   display: inline;
   font-size: 14px;
@@ -58,9 +46,6 @@ p {
   color: #2c2c2c;
   border-left: 5px solid #fff;
 }
-/*.first{
-  text-align: center;
-}*/
 .product-diagram {
   margin-top: 20px;
 }
@@ -71,6 +56,21 @@ p {
   background-size: cover;
   background-position: center top;
   background-color: #000;
+}
+.main-row1{
+  position:relative;
+  width:100%;
+  padding:180px 0;
+  text-align:center;
+  color: #fff;
+}
+.main-row1 .row1-p1 {
+  font-size:52px;
+  line-height:1.2em;
+}
+.main-row1 .row1-p2 {
+  font-size:18px;
+  padding-top:30px;
 }
 .sub-title {
   font-weight: bold;
@@ -237,7 +237,7 @@ a.fancy-image {
 
 .arrow-container {
   text-align:center;
-  height:0; 
+  height:0;
   color:#1EA0B9;
 }
 .architecture-arrow1 {
