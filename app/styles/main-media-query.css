@@ -1,21 +1,37 @@
-
-
-@media (max-width: 991px) {
-
+@media (max-width: 767px){
+  .navbar-nav li {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 2px solid #e6e6e6;
+  }
 }
 
 @media (max-width: 600px) {
+  .footer-container {
+    padding:0 15px;
+  }
+  .footer-row{
+    padding: 9px 0;
+  }
+  .footer-logo {
+    margin: auto;
+    font-size: 25px;
+    padding:8px 0;
+  }
+  .footer-copy {
+    padding:8px 0;
+  }
   .main_theme {
     height: 350px;
   }
-  .main-row1{
+  .row1{
     padding: 115px 0;
   }
-  .main-row1 .row1-p1{
+  .row1 .row1-p1{
     font-size: 35px;
     line-height: 1.2em;
   }
-  .main-row1 .row1-p2 {
+  .row1 .row1-p2 {
     font-size:18px;
   }
   .detail-title {
@@ -31,18 +47,36 @@
 
 /* mobile size */
 @media (max-width: 480px) {
+  .footer-container {
+    padding:0 10px;
+  }
+  .footer-row{
+    padding: 9px 0;
+  }
+  .footer-logo {
+    margin: auto;
+    font-size: 25px;
+    padding:15px 0;
+  }
+  .footer-copy {
+    padding:10px 0;
+    line-height: 1em;
+  }
   .main_theme {
     height: 350px;
   }
-  .main-row1{
+  .row1{
     padding: 115px 0;
   }
-  .main-row1 .row1-p1{
+  .row1 .row1-p1{
     font-size: 30px;
     line-height: 1.2em;
   }
-  .main-row1 .row1-p2 {
+  .row1 .row1-p2 {
     font-size:15px;
+  }
+  .row2{
+    padding:40px 0;
   }
   .detail-title {
     font-weight: 500;
@@ -53,23 +87,45 @@
     font-size:15px;
     margin-top: 12px;
   }
+  .tagline {
+    font-size: 23px;
+    font-weight: 600;
+  }
 }
 
 
-
+/* mobile small size */
 @media (max-width: 360px) {
+  .footer-container {
+    padding:0 10px;
+  }
+  .footer-row{
+    padding: 9px 0;
+  }
+  .footer-logo {
+    margin: auto;
+    font-size: 25px;
+    padding:15px 0;
+  }
+  .footer-copy {
+    padding: 10px 0;
+    line-height: 1em;
+  }
   .main_theme {
     height: 350px;
   }
-  .main-row1{
-    padding: 115px 0;
+  .row1{
+    padding: 91px 0;
   }
-  .main-row1 .row1-p1{
+  .row1 .row1-p1{
     font-size: 25px;
     line-height: 1.2em;
   }
-  .main-row1 .row1-p2 {
-    font-size:13px;
+  .row1 .row1-p2 {
+    font-size:16px;
+  }
+  .row2{
+    padding:40px 0;
   }
   .detail-title {
     font-weight: 500;

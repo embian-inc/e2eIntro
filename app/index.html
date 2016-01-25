@@ -6,6 +6,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="icon" type="image/ico" href="../img/favicon.ico">
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css" />
@@ -35,13 +36,13 @@
         </button>
         <a class="navbar-brand " href="#/"><span class="glyphicon glyphicon-stats" aria-hidden="true" style="font-size:25pt; color:#225378"><span style="font-family: 'Trebuchet MS', Helvetica, sans-serif "> e2eMon</span></span></a>
       </div>
-      <div class="collapse navbar-collapse" uib-collapse="navCollapsed" >
+      <div class="collapse navbar-collapse" uib-collapse="navCollapsed" ng-controller="appController">
         <ul class="nav navbar-nav">
-          <li><a ng-href="#/feature">특징</a></li>
-          <li><a ng-href="#/architecture">시스템 아키텍쳐</a></li>
+          <li ng-class="{ active: isActive('/feature') }"><a ng-href="#/feature#top">특징</a></li>
+          <li ng-class="{ active: isActive('/architecture') }"><a ng-href="#/architecture#top">시스템 아키텍쳐</a></li>
           <!-- <li><a ng-href="#/document#body">관련 문서</a></li> -->
           <li><a ng-href="http://e2edemo.embian.com/" target="_blank">Demo</a></li>
-          <li><a ng-href="#/contact">Contact</a></li>
+          <li ng-class="{ active: isActive('/contact') }"><a ng-href="#/contact#top">Contact</a></li>
           <li><a ng-href="http://blog.embian.com/" target="_blank">Blog</a></li>
         </ul>
       </div>
@@ -77,15 +78,15 @@
 </div>
 
 <div class="footer">
-  <div class="container">
-  <div class="row" style="position:relative; margin:0 auto; padding:20px 10px 0 10px;">
-    <div style="float:left; font-size:25px; font-weight:bold; color:#ffffff">
+  <div class="container footer-container">
+  <div class="row footer-row">
+    <div class="footer-logo">
       <a ng-href="http://www.embian.com/" target="_blank" style="color:#fff">
         Embian
       </a>
     </div>
-    <div style="text-align:right; font-size:12px; color:#fff; padding-top:13px">
-      서울시 강남구 현대벤쳐빌 1517호. 02-2040-6788. embian@embian.com. ©Copyright 2016. Embian, Inc. All rights reserved.
+    <div class="footer-copy">
+      서울시 강남구 현대벤쳐빌 1517호. 02-2040-6788. embian@embian.com. <br class="visible-xs visible-sm"> © 2016. Embian, Inc. All rights reserved.
     </div>
   </div>
 </div>
@@ -126,8 +127,6 @@ ga('send', 'pageview');
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/document.js"></script>
-<script src="scripts/controllers/about.js"></script>
 <script src="scripts/controllers/feature.js"></script>
 <script src="scripts/controllers/architecture.js"></script>
 <!-- endbuild -->
