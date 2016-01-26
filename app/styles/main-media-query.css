@@ -11,12 +11,13 @@
     padding:0 15px;
   }
   .footer-row{
-    padding: 9px 0;
+    padding: 11px 0 0 0;
+    margin: 0;
   }
   .footer-logo {
     margin: auto;
     font-size: 25px;
-    padding:8px 0;
+    padding:8px 0 0 0;
   }
   .footer-copy {
     padding:8px 0;
@@ -51,12 +52,13 @@
     padding:0 10px;
   }
   .footer-row{
-    padding: 9px 0;
+    padding: 11px 0 0 0;
+    margin: 0;
   }
   .footer-logo {
     margin: auto;
     font-size: 25px;
-    padding:15px 0;
+    padding:15px 0 0 0;
   }
   .footer-copy {
     padding:10px 0;
@@ -100,12 +102,13 @@
     padding:0 10px;
   }
   .footer-row{
-    padding: 9px 0;
+    padding: 11px 0 0 0;
+    margin:0;
   }
   .footer-logo {
     margin: auto;
     font-size: 25px;
-    padding:15px 0;
+    padding:15px 0 0 0;
   }
   .footer-copy {
     padding: 10px 0;

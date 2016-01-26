@@ -49,8 +49,26 @@ angular
         redirectTo: '/'
       });
   })
-  .controller('appController', function ($scope, $location){
+  .controller('appController', function ($scope, $location, $anchorScroll){
     $scope.isActive = function (viewLocation) {
       return viewLocation === $location.path();
     };
+
+    $scope.goTop = function (){
+      $location.hash('body');
+      $anchorScroll.yOffset=200;
+      $anchorScroll();
+    }
+
+    $(window).scroll(function(){
+      var height = $(window).scrollTop();
+      var scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
+      if (height > 150 && scrollBottom > 40 ){
+        $(".nav-top").addClass("show");
+      } else {
+        $(".nav-top").removeClass("show");
+      }
+
+
+    });
   });
